@@ -1,0 +1,62 @@
+doctype html
+html(lang="en")
+  head
+    title repo.trade
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width,initial-scale=1")
+    meta(name="color-scheme", content="light only")
+    meta(name="description", content="repo.trade")
+    meta(property="og:site_name", content="repo.trade")
+    meta(property="og:title", content="repo.trade")
+    meta(property="og:type", content="website")
+    meta(property="og:description", content="repo.trade")
+    meta(property="og:image", content="https://repo.trade/assets/img/logo.png")
+    meta(property="og:image:type", content="image/png")
+    meta(property="og:image:width", content="800")
+    meta(property="og:image:height", content="800")
+    meta(property="og:url", content="https://repo.trade")
+    meta(property="twitter:card", content="summary_large_image")
+    link(rel="canonical", href="https://repo.trade")
+    link(rel="stylesheet" type="text/css" href="/assets/css/main.css")
+  body
+    .hero
+      .hero-body
+        div
+          img(alt="logo" src="/assets/img/logo.svg" width="180px")
+        div
+          .title.is-2 repo.trade
+          .subtitle.is-5
+            span.has-text-warning Open-Source 
+            span.icon
+              i.fas.fa-code
+            span.has-text-link  Monetization 
+            span  $$$
+            span.has-text-primary  3.0
+
+    .section
+      .block
+        p Join the waitlist launch for the next generation of monetizating software creators.
+      .block
+        form(action="https://m.relay.md/form/submit?formId=2", method="POST")
+          input#mauticform_waitlist_id(type='hidden', name='mauticform[formId]', value='2')
+          input#mauticform_waitlist_return(type='hidden', name='mauticform[return]', value='')
+          input#mauticform_waitlist_name(type='hidden', name='mauticform[formName]', value='waitlist')
+          .fixed-grid.has-8-cols
+            .grid
+              .cell.is-col-span-2
+                .field
+                  .control.has-icons-left
+                    input.input.is-small(type='string', name="mauticform[f_name]", placeholder='Full Name')
+                    span.icon.is-small.is-left
+                      i.fas.fa-user
+                .field
+                  .control.has-icons-left.has-icons-right
+                    input.input.is-small(type='email', name="mauticform[email]", placeholder='Email')
+                    span.icon.is-small.is-left
+                      i.fas.fa-envelope
+                .field
+                  .control.has-icons-left.has-icons-right
+                    input.button.is-link(type="submit", value="Join Wait List!")
+
+
+  script(defer='', data-domain='repo.trade', src='https://p.chainsquad.com/js/script.js')
