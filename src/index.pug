@@ -18,6 +18,7 @@ html(lang="en")
     meta(property="twitter:card", content="summary_large_image")
     link(rel="canonical", href="https://repo.trade")
     link(rel="stylesheet" type="text/css" href="/assets/css/main.css")
+    script(defer='', data-domain='repo.trade', src='/assets/js/main.js')
   body
     .hero
       .hero-body
@@ -35,28 +36,26 @@ html(lang="en")
 
     .section
       .block
-        p Join the waitlist launch for the next generation of monetizating software creators.
-      .block
-        form(action="https://m.relay.md/form/submit?formId=2", method="POST")
-          input#mauticform_waitlist_id(type='hidden', name='mauticform[formId]', value='2')
-          input#mauticform_waitlist_return(type='hidden', name='mauticform[return]', value='')
-          input#mauticform_waitlist_name(type='hidden', name='mauticform[formName]', value='waitlist')
-          .fixed-grid.has-8-cols
+        form(hx-post="https://api.repo.trade/mail/submit")
+          .fixed-grid.has-6-cols
             .grid
               .cell.is-col-span-2
-                .field
-                  .control.has-icons-left
-                    input.input.is-small(type='string', name="mauticform[f_name]", placeholder='Full Name')
-                    span.icon.is-small.is-left
-                      i.fas.fa-user
-                .field
-                  .control.has-icons-left.has-icons-right
-                    input.input.is-small(type='email', name="mauticform[email]", placeholder='Email')
-                    span.icon.is-small.is-left
-                      i.fas.fa-envelope
-                .field
-                  .control.has-icons-left.has-icons-right
-                    input.button.is-link(type="submit", value="Join Wait List!")
+                .block
+                  .subtitle.is-5 Join the waitlist launch for the next generation of monetizating software creators.
+                .block
+                  .field
+                    .control.has-icons-left.is-expanded
+                      input.input.is-radiusless(type='string', name="name", placeholder='Full Name')
+                      span.icon.is-left
+                        i.fas.fa-user
+                  .field
+                    .control.has-icons-left.has-icons-right.is-expanded
+                      input.input.is-radiusless(type='email', name="email", placeholder='Email')
+                      span.icon.is-left
+                        i.fas.fa-envelope
+                  .field
+                    .control.has-icons-left.is-expanded
+                      input.button.is-link.is-radiusless(type="submit", value="Join Wait List!")
 
 
   script(defer='', data-domain='repo.trade', src='https://p.chainsquad.com/js/script.js')
