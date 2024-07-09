@@ -2,7 +2,7 @@ import * as esbuild from 'esbuild'
 
 const config = {
     entryPoints: ['src/assets/es/main.js'],
-    outdir: 'docs/assets/ js',
+    outdir: 'docs/assets/js',
     bundle: true,
     minify: true,
     plugins: [],
