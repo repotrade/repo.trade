@@ -20,28 +20,82 @@ html(lang="en")
     link(rel="stylesheet" type="text/css" href="/assets/css/main.css")
     script(defer='', data-domain='repo.trade', src='/assets/js/main.js')
   body
-    .hero
-      .hero-body
-        div
-          img(alt="logo" src="/assets/img/logo.svg" width="180px")
-        div
-          .title.is-2 repo.trade
-          .subtitle.is-5
-            span.has-text-warning Open-Source 
-            span.icon
-              i.fas.fa-code
-            span.has-text-link  Monetization 
-            span  $$$
-            span.has-text-primary  3.0
+    .columns
+      .column.is-two-thirds
 
-    .section
-      .block
-        form(hx-post="https://api.repo.trade/mail/submit")
-          .fixed-grid.has-6-cols
-            .grid
-              .cell.is-col-span-2
-                .block
-                  .subtitle.is-5 Join the waitlist for the next iteration of monetizating open source software.
+        .hero
+          .hero-body
+            div
+              img(alt="logo" src="/assets/img/logo.svg" width="180px")
+            div
+              .title.is-2 repo.trade
+              .subtitle.is-5
+                span.has-text-warning Open-Source 
+                span.icon
+                  i.fas.fa-code
+                span.has-text-link  Monetization 
+                span  $$$
+                span.has-text-primary  3.0
+
+        .section
+          .title.is-3 A Short Story
+
+          .columns.block
+            .column.is-2
+              img(src="/assets/img/aria.png" width="250px")
+            .column
+              p
+                | In the bustling digital landscape of 2030, a young developer named Aria
+                | pushed the final commit to her revolutionary AI-powered language
+                | translation tool. As she created the GitHub repository, a
+                | blockchain-based system automatically minted a unique token for her
+                | project.
+
+          p.block 
+            | Word spread quickly about Aria's innovative software. Tech enthusiasts
+            | and investors alike began acquiring the project's tokens, speculating on
+            | its future success. As the token's value rose, Aria received a steady
+            | stream of passive income, allowing her to focus full-time on improving
+            | her creation.
+
+          .columns.block
+            .column.is-2
+              img(src="/assets/img/leo.png" width="250px")
+            .column
+              p
+                | Meanwhile, a code analyst named Leo made a name for himself by
+                | identifying promising open-source projects early. His latest
+                | find was Aria's translation tool. Leo invested heavily in its
+                | token and produced in-depth reviews of the codebase, further
+                | driving interest and engagement.
+
+          .columns.block
+            .column
+              p
+              | The tokenomics incentivized holders to actively participate in the project's
+              | development. Users contributed bug reports, feature requests, and even code
+              | submissions to increase the software's value and, by extension, the token's
+              | worth.
+            .column.is-2
+              img(src="/assets/img/hodlers.png" width="250px")
+
+          .columns.block
+            .column.is-2
+              img(src="/assets/img/community.png" width="250px")
+            .column
+              p
+              | As Aria's project flourished, she marveled at how this new ecosystem had
+              | transformed open-source development, creating a symbiotic relationship
+              | between creators, users, and investors. The blockchain-based token system had
+              | turned her passion into a sustainable career, all while fostering a vibrant
+              | and engaged community around her work.
+
+        .section
+          .columns
+            .column.is-three-fifths.is-offset-one-fifth
+              form(hx-post="https://api.repo.trade/mail/submit")
+                .title.is-4 Get on the wait list
+                .subtitle.is-6 The next iteration of monetizating open source software.
                 .block
                   .field
                     .control.has-icons-left.is-expanded
@@ -55,7 +109,6 @@ html(lang="en")
                         i.fas.fa-envelope
                   .field
                     .control.has-icons-left.is-expanded
-                      input.button.is-link.is-radiusless(type="submit", value="Join Wait List!")
-
+                      input.button.is-link.is-radiusless(type="submit", value="📩 Join Wait List!")
 
   script(defer='', data-domain='repo.trade', src='https://p.chainsquad.com/js/script.js')
