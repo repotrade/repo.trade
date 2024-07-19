@@ -49,6 +49,18 @@ $fa-font-path: "@fortawesome/fontawesome-free/webfonts/";
   src: url("../../../docs/assets/fonts/FiraCode-VariableFont_wght.ttf");
 }
 
-html {
-  background-color: #eeeeee;
+@media (prefers-color-scheme: light) {
+  html {
+    background-color: #eeeeee;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: #111111;
+  }
+}
+
+.is-horizontal-center {
+  justify-content: center;
 }

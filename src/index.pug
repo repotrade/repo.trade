@@ -21,21 +21,21 @@ html(lang="en")
     script(defer='', data-domain='repo.trade', src='/assets/js/main.js')
   body
     .columns
-      .column.is-two-thirds
+      .column.is-two-thirds.has-text-centered
         .section
           img(alt="logo" src="/assets/img/logo.svg" width="180px")
-          .title.is-1 repo.trade
+          .title.is-1.is-underlined.has-text-weight-bold repo.trade
 
         .section
           .title.is-3 A Short Story of the Future
 
           .subtitle.is-5 Chapter 1: Tokenizing Repositories
           .columns
-            .column.is-2.mr-3
-              figure.image.is-128x128.p-2
+            .column.is-3.is-flex.is-horizontal-center
+              figure.image.is-128x128
                 img.is-rounded(src="/assets/img/aria.png" width="128px")
             .column
-              p
+              p.has-text-justified
                 | In the bustling digital landscape of 2030, a young developer named Aria
                 | pushed the final commit to her revolutionary AI-powered language
                 | translation tool. As she created the GitHub repository, a
@@ -44,24 +44,24 @@ html(lang="en")
 
           .subtitle.is-5 Chapter 2: The Angels
           .columns
-            .column.is-2.mr-3
-              figure.image.is-128x128.p-2
+            .column.is-3.is-flex.is-horizontal-center
+              figure.image.is-128x128
                 img.is-rounded(src="/assets/img/invest.png" width="250px")
             .column
-              p
-              | Word spread quickly about Aria's innovative software. Tech enthusiasts
-              | and investors alike began acquiring the project's tokens, speculating on
-              | its future success. As the token's value rose, Aria received a steady
-              | stream of passive income, allowing her to focus full-time on improving
-              | her creation.
+              p.has-text-justified
+                | Word spread quickly about Aria's innovative software. Tech enthusiasts
+                | and investors alike began acquiring the project's tokens, speculating on
+                | its future success. As the token's value rose, Aria received a steady
+                | stream of passive income, allowing her to focus full-time on improving
+                | her creation.
 
           .subtitle.is-5 Chapter 3: The Speculators and Enthusiats
           .columns
-            .column.is-2.mr-3
-              figure.image.is-128x128.p-2
+            .column.is-3.is-flex.is-horizontal-center
+              figure.image.is-128x128
                 img.is-rounded(src="/assets/img/leo.png" width="250px")
             .column
-              p
+              p.has-text-justified
                 | Meanwhile, a code analyst named Leo made a name for himself by
                 | identifying promising open-source projects early. His latest
                 | find was Aria's translation tool. Leo invested heavily in its
@@ -70,50 +70,52 @@ html(lang="en")
 
           .subtitle.is-5 Chapter 4: Community Engagement and Participation
           .columns
-            .column.is-2.mr-3
-              figure.image.is-128x128.p-2
+            .column.is-3.is-flex.is-horizontal-center
+              figure.image.is-128x128
                 img.is-rounded(src="/assets/img/hodlers.png" width="250px")
             .column
-              p
-              | The tokenomics incentivized holders to actively participate in the project's
-              | development. Users contributed bug reports, feature requests, and even code
-              | submissions to increase the software's value and, by extension, the token's
-              | worth.
+              p.has-text-justified
+                | The tokenomics incentivized holders to actively participate in the project's
+                | development. Users contributed bug reports, feature requests, and even code
+                | submissions to increase the software's value and, by extension, the token's
+                | worth.
 
           .subtitle.is-5 Chapter 5: The Success
           .columns
-            .column.is-2.mr-3
-              figure.image.is-128x128.p-2
+            .column.is-3.is-flex.is-horizontal-center
+              figure.image.is-128x128
                 img.is-rounded(src="/assets/img/community.png" width="250px")
             .column
-              p
-              | As Aria's project flourished, she marveled at how this new ecosystem had
-              | transformed open-source development, creating a symbiotic relationship
-              | between creators, users, and investors. The blockchain-based token system had
-              | turned her passion into a sustainable career, all while fostering a vibrant
-              | and engaged community around her work.
+              p.has-text-justified
+                | As Aria's project flourished, she marveled at how this new ecosystem had
+                | transformed open-source development, creating a symbiotic relationship
+                | between creators, users, and investors. The blockchain-based token system had
+                | turned her passion into a sustainable career, all while fostering a vibrant
+                | and engaged community around her work.
 
           .subtitle.is-5 Appendix: The Wait List
           .columns
-            .column.is-2.mr-3
-              figure.image.is-128x128.p-2
+            .column.is-3.is-flex.is-horizontal-center
+              figure.image.is-128x128
                 img.is-rounded(src="/assets/img/waitlist.png" width="250px")
             .column
-              p Stay informed about the next iteration of monetizating open source software.
-              form(hx-post="https://api.repo.trade/mail/submit")
-                .block
-                  .field
-                    .control.has-icons-left.is-expanded
-                      input.input.is-radiusless(type='string', name="name", placeholder='Full Name')
-                      span.icon.is-left
-                        i.fas.fa-user
-                  .field
-                    .control.has-icons-left.has-icons-right.is-expanded
-                      input.input.is-radiusless(type='email', name="email", placeholder='Email')
-                      span.icon.is-left
-                        i.fas.fa-envelope
-                  .field
-                    .control.has-icons-left.is-expanded
-                      input.button.is-link.is-radiusless(type="submit", value="📩 Join Wait List!")
+              p.block.has-text-justified
+                |Stay informed about the next iteration of monetizating open source software.
+              .block
+                form(hx-post="https://api.repo.trade/mail/submit")
+                  .block
+                    .field
+                      .control.has-icons-left.is-expanded
+                        input.input.is-radiusless(type='string', name="name", placeholder='Full Name')
+                        span.icon.is-left
+                          i.fas.fa-user
+                    .field
+                      .control.has-icons-left.has-icons-right.is-expanded
+                        input.input.is-radiusless(type='email', name="email", placeholder='Email')
+                        span.icon.is-left
+                          i.fas.fa-envelope
+                    .field
+                      .control.has-icons-left.is-expanded
+                        input.button.is-link.is-radiusless(type="submit", value="📩 Join Wait List!")
 
   script(defer='', data-domain='repo.trade', src='https://p.chainsquad.com/js/script.js')
