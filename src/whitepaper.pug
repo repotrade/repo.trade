@@ -1,0 +1,118 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Git-like Commit History
+    style.
+        body {
+          background-color: #1e1e1e;
+          color: #d4d4d4;
+          font-family: "Courier New", Courier, monospace;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          margin: 0;
+          padding: 0;
+        }
+        fieldset {
+          background-color: #1e1e1e;
+          border: 2px solid #4a4a4a;
+          border-radius: 10px;
+          padding: 20px;
+          max-width: 800px;
+          width: 100%;
+        }
+        legend {
+          padding: 0 10px;
+          font-size: 18px;
+          font-weight: bold;
+          color: #569cd6;
+        }
+        .commit-history {
+          display: table;
+          border-spacing: 0 2px;
+        }
+        .commit {
+          display: table-row;
+        }
+        .commit > span {
+          display: table-cell;
+          padding-right: 10px;
+          white-space: nowrap;
+        }
+        .time {
+          color: #6a9955;
+          width: 80px;
+        }
+        .branch {
+          color: #569cd6;
+          width: 150px;
+        }
+        .hash {
+          color: #dcdcaa;
+          width: 70px;
+        }
+        .message {
+          color: #d4d4d4;
+        }
+  body
+    fieldset
+      legend Git Commit History
+      .commit-history
+        .commit
+          span.time 2 days ago
+          span.branch (HEAD -&gt; lorem)
+          span.hash a1b2c3d
+          span.message Lorem ipsum dolor sit amet
+        .commit
+          span.time 2 days ago
+          span.branch (BR_1)
+          span.hash e4f5g6h
+          span.message Consectetur adipiscing elit
+        .commit
+          span.time 2 days ago
+          span.branch
+          span.hash i7j8k9l
+          span.message Sed do eiusmod tempor
+        .commit
+          span.time 2 days ago
+          span.branch
+          span.hash m1n2o3p
+          span.message Incididunt ut labore
+        .commit
+          span.time 2 days ago
+          span.branch (BR_4)
+          span.hash q4r5s6t
+          span.message LAST lorem ipsum
+        .commit
+          span.time 2 days ago
+          span.branch (BR blabla)
+          span.hash u7v8w9x
+          span.message In dolor sit amet
+        .commit
+          span.time 2 days ago
+          span.branch
+          span.hash y1z2a3b
+          span.message Consectetur adipiscing
+        .commit
+          span.time 2 days ago
+          span.branch
+          span.hash c4d5e6f
+          span.message Elit sed do eiusmod
+        .commit
+          span.time 2 days ago
+          span.branch (BR_2)
+          span.hash g7h8i9j
+          span.message Second Lorem - ipsum
+        .commit
+          span.time 2 days ago
+          span.branch
+          span.hash k1l2m3n
+          span.message Third Lorem on ipsum - dolor
+        .commit
+          span.time 2 days ago
+          span.branch
+          span.hash o4p5q6r
+          span.message First Lorem - sit amet
