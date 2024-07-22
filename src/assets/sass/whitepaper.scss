@@ -59,3 +59,52 @@ legend {
 .commit p {
   line-break: auto;
 }
+.commit p {
+  // text-align: justify;
+  // text-justify: inter-word;
+}
+.commit .message .headline:hover {
+  cursor: zoom-in !important;
+}
+
+/* Collapse */
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.collapse {
+  display: block;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height .5s cubic-bezier(0, 1, 0, 1);
+  &.show {
+    max-height: 99em;
+    transition: max-height .5s ease-in-out;
+  }
+}
+
+
+/* Responsivness */
+@media screen and (max-width: 750px) {
+  .commit {
+    display: block;
+    float: left;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .commit .message {
+    display: block;
+    float: none;
+    font-size: 16px !important;
+    padding: 5px;
+  }
+  .commit .message > a {
+  }
+  .time {
+    width: 200px;
+  }
+
+  .collapse {
+    font-size: 13px;
+  }
+}

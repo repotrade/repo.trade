@@ -12,65 +12,67 @@ html(lang="en")
   head
     meta(charset='UTF-8')
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
-    title Git-like Commit History
+    title repo.trade :: whitepaper
     link(rel="stylesheet" type="text/css" href="/assets/css/whitepaper.css")
+    script(type="text/javascript" src="/assets/js/main.js")
     style.
-      .commit p {
-        text-align: justify;
-        text-justify: inter-word;
-      }
   body
     fieldset
       legend repo.trade
       .commit-history
         +commit("14 days ago", "HEAD", "908cddf1")
-          p ✨ feat: whitepaper
+          a ✨ feat: whitepaper
         +commit("15 days ago", "(ci/executive)", "b801282d")
-          p 👮 ci: executive summary
-          p Repo.trade is a revolutionary platform designed to solve the persistent underfunding of critical open-source projects by applying successful Web3 engagement strategies. The platform operates in three stages: an initial angel investment period, a curve-based trading phase, and culminates in an decentralized exchange listing (DEL). Repo.trade offers multiple benefits for developers, including fee earnings and token allocations, while providing the community with rewards for engagement and entertainment. The project implements key features such as token-based incentives, gamification, tiered reward systems, and governance participation to drive user engagement and create economic value. By ticking most boxes for successful Web3 projects, including community building, transparency, and a unique value proposition, repo.trade aims to create a self-sustaining ecosystem that aligns the interests of all stakeholders. This innovative approach not only addresses the financial challenges of open-source development but also promotes innovation, enhances security, and contributes to the overall health of the open-source ecosystem.
+          a.headline(data-toggle="collapse") 👮 ci: executive summary
+          .collapse
+            p Repo.trade is a revolutionary platform designed to solve the persistent underfunding of critical open-source projects by applying successful Web3 engagement strategies. The platform operates in three stages: an initial angel investment period, a curve-based trading phase, and culminates in an decentralized exchange listing (DEL). Repo.trade offers multiple benefits for developers, including fee earnings and token allocations, while providing the community with rewards for engagement and entertainment. The project implements key features such as token-based incentives, gamification, tiered reward systems, and governance participation to drive user engagement and create economic value. By ticking most boxes for successful Web3 projects, including community building, transparency, and a unique value proposition, repo.trade aims to create a self-sustaining ecosystem that aligns the interests of all stakeholders. This innovative approach not only addresses the financial challenges of open-source development but also promotes innovation, enhances security, and contributes to the overall health of the open-source ecosystem.
         +commit("16 days ago", "(feat/intro)", "53d7ef29")
-          p 💣 feat: introduction
-          ul
-            li The open-source software development landscape faces a critical issue: chronic underfunding of essential projects.
-            li This underfunding persists despite the immense value these projects bring to the digital ecosystem.
-            li A stark contrast exists between this situation and the success of Web3 projects, where millions are invested in speculative ventures and meme coins.
-            li Repo.trade aims to bridge this gap by leveraging engagement farming strategies proven successful in the Web3 space.
-            li The goal is to create a sustainable funding model for open-source projects.
-            li Key strategies include implementing token-based incentives, gamification, and community-driven governance.
-            li Repo.trade seeks to align the interests of developers, users, and investors.
-            li This innovative approach addresses the financial challenges faced by open-source maintainers.
-            li It also enhances community engagement and fosters innovation.
-            li Ultimately, repo.trade aims to ensure the long-term viability of critical digital infrastructure.
+          a.headline(data-toggle="collapse") 💣 feat: introduction
+          .collapse
+            ul
+              li The open-source software development landscape faces a critical issue: chronic underfunding of essential projects.
+              li This underfunding persists despite the immense value these projects bring to the digital ecosystem.
+              li A stark contrast exists between this situation and the success of Web3 projects, where millions are invested in speculative ventures and meme coins.
+              li Repo.trade aims to bridge this gap by leveraging engagement farming strategies proven successful in the Web3 space.
+              li The goal is to create a sustainable funding model for open-source projects.
+              li Key strategies include implementing token-based incentives, gamification, and community-driven governance.
+              li Repo.trade seeks to align the interests of developers, users, and investors.
+              li This innovative approach addresses the financial challenges faced by open-source maintainers.
+              li It also enhances community engagement and fosters innovation.
+              li Ultimately, repo.trade aims to ensure the long-term viability of critical digital infrastructure.
         +commit("16 days ago", "(feat/intro)", "b2e6704e")
-          p 💥 feat: problem statement
-          ul
-            li Chronic underfunding of critical open-source projects
-            li Misalignment between value creation and financial compensation in open-source
-            li Lack of sustainable business models for open-source maintainers
-            li Insufficient recognition and support from beneficiary companies and projects
-            li Risk to long-term viability and security of essential digital infrastructure
-            li Burnout and resource constraints among open-source maintainers
-            li Potential for reduced innovation and delayed updates in critical software
-            li Discouragement of talented developers from contributing to open-source
-            li Vulnerability to security risks due to inadequate resources for proper maintenance
-            li Threat to the overall health and growth of the open-source ecosystem
+          a.headline(data-toggle="collapse")  💥 feat: problem statement
+          .collapse
+            ul
+              li Chronic underfunding of critical open-source projects
+              li Misalignment between value creation and financial compensation in open-source
+              li Lack of sustainable business models for open-source maintainers
+              li Insufficient recognition and support from beneficiary companies and projects
+              li Risk to long-term viability and security of essential digital infrastructure
+              li Burnout and resource constraints among open-source maintainers
+              li Potential for reduced innovation and delayed updates in critical software
+              li Discouragement of talented developers from contributing to open-source
+              li Vulnerability to security risks due to inadequate resources for proper maintenance
+              li Threat to the overall health and growth of the open-source ecosystem
         +commit("16 days ago", "(fix/farming)", "5d295c61")
-          p 🧯 fix: engagement farming
-          p Meanwhile, people are throwing millions of dollars into meme coins merely for the purpose of entertainment and speculation.
-          p Based on the success of Web3 projects in general and pump.fun specifically, as well as the concept of engagement farming, we can learn precicely what is needed for this project:
-          ul
-            li Token-based incentives: Rewarding users with tokens for active participation and engagement.
-            li Gamification of activities: Implementing game-like elements to make interactions more enjoyable and addictive.
-            li Tiered reward systems: Creating levels or tiers of engagement with increasing benefits to encourage long-term participation.
-            li Social networking features: Integrating social elements to foster community building and viral growth.
-            li Governance participation: Allowing token holders to vote on project decisions, creating a sense of ownership and involvement.
-            li Yield farming opportunities: Offering additional rewards for users who stake their tokens or provide liquidity.
-            li NFT integration: Using non-fungible tokens as unique rewards or access passes for engaged users.
-            li Referral programs: Incentivizing users to bring in new participants through referral bonuses.
-            li Cross-platform integrations: Partnering with other projects to create synergies and expand the user base.
-          p These strategies can create economic value by increasing user retention, driving token demand, expanding the user base, and creating a self-sustaining ecosystem of engaged participants.
+          a.headline(data-toggle="collapse") 🧯 fix: engagement farming
+          .collapse
+            p Meanwhile, people are throwing millions of dollars into meme coins merely for the purpose of entertainment and speculation.
+            p Based on the success of Web3 projects in general and pump.fun specifically, as well as the concept of engagement farming, we can learn precicely what is needed for this project:
+            ul
+              li Token-based incentives: Rewarding users with tokens for active participation and engagement.
+              li Gamification of activities: Implementing game-like elements to make interactions more enjoyable and addictive.
+              li Tiered reward systems: Creating levels or tiers of engagement with increasing benefits to encourage long-term participation.
+              li Social networking features: Integrating social elements to foster community building and viral growth.
+              li Governance participation: Allowing token holders to vote on project decisions, creating a sense of ownership and involvement.
+              li Yield farming opportunities: Offering additional rewards for users who stake their tokens or provide liquidity.
+              li NFT integration: Using non-fungible tokens as unique rewards or access passes for engaged users.
+              li Referral programs: Incentivizing users to bring in new participants through referral bonuses.
+              li Cross-platform integrations: Partnering with other projects to create synergies and expand the user base.
+            p These strategies can create economic value by increasing user retention, driving token demand, expanding the user base, and creating a self-sustaining ecosystem of engaged participants.
         +commit("16 days ago", "(build/solution)", "93710d6e")
-          p 👷 build: solution overview 
+          a.headline(data-toggle="collapse") 👷 build: solution overview
+          .collapse
             ul
               li Stage 1: Angels
                 p After creating the token, it enters an angel-invest period of 2 weeks. In this period, a daily auction takes place. Every day a certain percentage of the total supply is handed out to participants in the daily's round. To participate, an angel must put money into the token's vault. This process cannot be reversed so the money is considered an investment.
@@ -79,71 +81,77 @@ html(lang="en")
               li Stage 3: Listing
                 p Once the AMM has collected a certain amount of capital, the program enlists the token on raydium to allow immediate swaps with minimal slippage and improved liquidity through support of OpenBook's central limit order books (CLOB). This enables a more common trading experience and integration of custom trading strategies against a well-known interface. We call this step the Decentralized Exchange Listing (DEL).
         +commit("16 days ago", "(tex/stack)", "d0ceaaa3")
-          p 👷 build: technology stack
-          ul
-            li Solana blockchain: High-performance, scalable layer-1 protocol
-            li Anchor: Solana's development framework for smart contracts
-            li Rust: Programming language for on-chain program development
-            li TypeScript: For building the SDK and enhancing type safety
-            li Node.js: Server-side runtime environment for JavaScript
-            li Python: For backend tasks and data processing
-            li Frontend framework: Vue.js,  React.js, or similar modern solution
-            li Vite: Build tool and development server for faster development
-            li Web3.js: Library for interacting with the Solana blockchain
-        +commit("17 days ago", "(build/roadmap)", "1a2ecad8")
-          p 👷 build: roadmap
-          ul
-           li launch of the program on solana
-           li release of a frontend to manage the repos
-           li integration with github
-           li allow repo owners to claim their repos
-           li git cli tools to manage repo data and analytics
-           li support for repos on
-             ul
-               li bitbucket
-               li gitlab
-        +commit("17 days ago", "(biz/token)", "510891a5")
-          p 💰 biz: tokenomics
-          p There are no plans to release a separate governance token currently.
-        +commit("17 days ago", "(biz/use)", "1b472269")
-          p 💰 biz: use-cases
-          ul
-            li Benefits for the developer
-              ul
-                li the owner (or group) of the repo earns a fee on every interaction with the repo.trade program
-                li the have a fixed amount of token they can claim (after verification of ownership) and use as they wish
-                  ul
-                    li for themselves
-                    li for community rewards
-                li community incentivized to market the software, e.g. on social media
-            li Benefits for the community
-              ul
-                li engagement can be rewarded
-                  ul
-                    li bug reporting
-                    li bug fixing
-                    li feature development
-                li entertainment when scouting for newest, greatest software
-            li Benefits for the open source software community
-              ul
-                li straight-forward implementation of bounty structures
-                li solana-blinks natively supported
-        +commit("17 days ago", "(biz/model)", "29a18325")
-          p 💰 biz: model
-          p Repo trade ears revenue by
+          a.headline(data-toggle="collapse") 👷 build: technology stack
+          .collapse
             ul
-              li Transaction Fee: Generated from user interactions with the program, contributing to ongoing revenue.
-              li Setup Fee: Charged for establishing a new repository on the platform, specifically for the purpose of tokenizing a repository.
+              li Solana blockchain: High-performance, scalable layer-1 protocol
+              li Anchor: Solana's development framework for smart contracts
+              li Rust: Programming language for on-chain program development
+              li TypeScript: For building the SDK and enhancing type safety
+              li Node.js: Server-side runtime environment for JavaScript
+              li Python: For backend tasks and data processing
+              li Frontend framework: Vue.js,  React.js, or similar modern solution
+              li Vite: Build tool and development server for faster development
+              li Web3.js: Library for interacting with the Solana blockchain
+        +commit("17 days ago", "(build/roadmap)", "1a2ecad8")
+          a.headline(data-toggle="collapse") 👷 build: roadmap
+          .collapse
+            ul
+            li launch of the program on solana
+            li release of a frontend to manage the repos
+            li integration with github
+            li allow repo owners to claim their repos
+            li git cli tools to manage repo data and analytics
+            li support for repos on
+              ul
+                li bitbucket
+                li gitlab
+        +commit("17 days ago", "(biz/token)", "510891a5")
+          a.headline(data-toggle="collapse") 💰 biz: tokenomics
+          .collapse
+            p There are no plans to release a separate governance token currently.
+        +commit("17 days ago", "(biz/use)", "1b472269")
+          a.headline(data-toggle="collapse") 💰 biz: use-cases
+          .collapse
+            ul
+              li Benefits for the developer
+                ul
+                  li the owner (or group) of the repo earns a fee on every interaction with the repo.trade program
+                  li the have a fixed amount of token they can claim (after verification of ownership) and use as they wish
+                    ul
+                      li for themselves
+                      li for community rewards
+                  li community incentivized to market the software, e.g. on social media
+              li Benefits for the community
+                ul
+                  li engagement can be rewarded
+                    ul
+                      li bug reporting
+                      li bug fixing
+                      li feature development
+                  li entertainment when scouting for newest, greatest software
+              li Benefits for the open source software community
+                ul
+                  li straight-forward implementation of bounty structures
+                  li solana-blinks natively supported
+        +commit("17 days ago", "(biz/model)", "29a18325")
+          a.headline(data-toggle="collapse") 💰 biz: model
+          .collapse
+            p Repo trade ears revenue by
+              ul
+                li Transaction Fee: Generated from user interactions with the program, contributing to ongoing revenue.
+                li Setup Fee: Charged for establishing a new repository on the platform, specifically for the purpose of tokenizing a repository.
         +commit("18 days ago", "(biz/model)", "dce660e7")
-          p 🎉 ci: conclusion
-          p A successful web3 projects needs:
-          ul
-            li Community building: Successful projects often focus on building a strong, engaged community.
-            li Gamification: Many successful platforms incorporate game-like elements to increase user engagement.
-            li Incentive structures: Well-designed token economics and reward systems can drive user participation.
-            li User experience: An intuitive and enjoyable user interface can significantly boost engagement.
-            li Transparency: Regular updates and open communication with the community often lead to higher trust and engagement.
-            li Unique value proposition: Projects that offer something novel or solve a real problem tend to attract and retain users.
-            li Viral mechanics: Features that encourage users to invite others or share content can lead to rapid growth.
-            li Continuous improvement: Successful projects often iterate based on user feedback and market trends.
-          p And repo.trade ticks most of them alrady.
+          a.headline(data-toggle="collapse") 🎉 ci: conclusion
+          .collapse
+            p A successful web3 projects needs:
+            ul
+              li Community building: Successful projects often focus on building a strong, engaged community.
+              li Gamification: Many successful platforms incorporate game-like elements to increase user engagement.
+              li Incentive structures: Well-designed token economics and reward systems can drive user participation.
+              li User experience: An intuitive and enjoyable user interface can significantly boost engagement.
+              li Transparency: Regular updates and open communication with the community often lead to higher trust and engagement.
+              li Unique value proposition: Projects that offer something novel or solve a real problem tend to attract and retain users.
+              li Viral mechanics: Features that encourage users to invite others or share content can lead to rapid growth.
+              li Continuous improvement: Successful projects often iterate based on user feedback and market trends.
+            p And repo.trade ticks most of them alrady.
