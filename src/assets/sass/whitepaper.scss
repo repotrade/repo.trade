@@ -1,5 +1,5 @@
 body {
-  background-color: #2d2d2d;
+  background-color: hsl(221, 14%, 96%);
   color: #d4d4d4;
   font-family: "Courier New", Courier, monospace;
   display: flex;
@@ -68,21 +68,22 @@ legend {
 }
 
 /* Collapse */
-*, ::after, ::before {
-    box-sizing: border-box;
+*,
+::after,
+::before {
+  box-sizing: border-box;
 }
 
 .collapse {
   display: block;
   max-height: 0px;
   overflow: hidden;
-  transition: max-height .5s cubic-bezier(0, 1, 0, 1);
+  transition: max-height 0.5s cubic-bezier(0, 1, 0, 1);
   &.show {
     max-height: 99em;
-    transition: max-height .5s ease-in-out;
+    transition: max-height 0.5s ease-in-out;
   }
 }
-
 
 /* Responsivness */
 @media screen and (max-width: 750px) {

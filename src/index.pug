@@ -101,7 +101,7 @@ html(lang="en")
             .column
               p.block.has-text-justified
                 |Stay informed about the next iteration of monetizating open source software.
-              .block
+              div
                 form(hx-post="https://api.repo.trade/mail/submit")
                   .block
                     .field
@@ -117,5 +117,16 @@ html(lang="en")
                     .field
                       .control.has-icons-left.is-expanded
                         input.button.is-link.is-radiusless(type="submit", value="📩 Join Wait List!")
+              .div
+                  p - or - 
+                  a.button.is-warning(href="https://t.me/repotrade")
+                    span.icon.is-small
+                      i.fab.fa-telegram
+                    span Chat with us on Telegram
+              .div
+                  p - or - 
+                  a.button.is-danger(href="/whitepaper")
+                    span.icon.is-small 📄
+                    span Read the whitepaper
 
   script(defer='', data-domain='repo.trade', src='https://p.chainsquad.com/js/script.js')

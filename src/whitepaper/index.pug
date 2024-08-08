@@ -74,11 +74,11 @@ html(lang="en")
           a.headline(data-toggle="collapse") 👷 build: solution overview
           .collapse
             ul
-              li Stage 1: Angels
+              li Stage 1: Auction
                 p After creating the token, it enters an angel-invest period of 2 weeks. In this period, a daily auction takes place. Every day a certain percentage of the total supply is handed out to participants in the daily's round. To participate, an angel must put money into the token's vault. This process cannot be reversed so the money is considered an investment.
               li Stage 2: Fun on the Curve
                 p Once the two initial auction days have passed, the coin enters a phase where it can be traded freely on a curve. This means, the invested capital from the previous round is used to support the buying and selling of token against an automated market maker (AMM). This trading affects the pricing used by the AMM by moving the buy/sell price on a curve. We are planning to start on a constant product formula curve `x*y=k` which makes the AMM a Constant Product Automated Market Maker (CPAMM).
-              li Stage 3: Listing
+              li Stage 3: Listing (under consideration)
                 p Once the AMM has collected a certain amount of capital, the program enlists the token on raydium to allow immediate swaps with minimal slippage and improved liquidity through support of OpenBook's central limit order books (CLOB). This enables a more common trading experience and integration of custom trading strategies against a well-known interface. We call this step the Decentralized Exchange Listing (DEL).
         +commit("16 days ago", "(tex/stack)", "d0ceaaa3")
           a.headline(data-toggle="collapse") 👷 build: technology stack
@@ -102,14 +102,12 @@ html(lang="en")
             li integration with github
             li allow repo owners to claim their repos
             li git cli tools to manage repo data and analytics
-            li support for repos on
-              ul
-                li bitbucket
-                li gitlab
+            li shields/badges for repo owners
+            li support for solana blinks for auctions and swaps
         +commit("17 days ago", "(biz/token)", "510891a5")
           a.headline(data-toggle="collapse") 💰 biz: tokenomics
           .collapse
-            p There are no plans to release a separate governance token currently.
+            p A separate governance and profit sharing token is under consideration but details have not been finalized and may never be.
         +commit("17 days ago", "(biz/use)", "1b472269")
           a.headline(data-toggle="collapse") 💰 biz: use-cases
           .collapse
